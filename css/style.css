@@ -1,0 +1,78 @@
+body {
+	background-color: #333;
+	scale: none;
+}
+
+.canvas {
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	color: #4bffc3;
+	font-family: sans-serif;
+}
+
+.output {
+	position: relative;
+	width: 30%;
+	height: 50px;
+	background: none;
+	border: 2px solid #4bffc3;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.result-line {
+	position: absolute;
+	right: 10%;
+	top: 27%;
+	font-size: 18px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+
+
+.buttons-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 5px;
+}
+
+
+.buttons-grid button {
+	font-size: 22px;
+	background: none;
+	border: 1px solid #fff;
+	padding: 15px 15px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#deleted-line {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#deleted-all {
+	grid-column-start: -1;
+	grid-column-end: 3;
+}
+
+#enter {
+	grid-column-start: -2;
+	grid-column-end: 2;
+}
+
+/*#plus {
+	grid-column-start: -1;
+	grid-column-end: 3;
+}*/
