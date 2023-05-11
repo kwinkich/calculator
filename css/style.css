@@ -1,3 +1,21 @@
+html {
+	touch-action: manipulation;
+	/* отключает действия по умолчанию на сенсорных устройствах */
+	zoom: reset;
+	/* сбрасывает масштабирование */
+	touch-zooming: none;
+	/* отключает масштабирование на сенсорных устройствах */
+}
+
+/* дополнительный код для отключения масштабирования на iOS */
+@media (max-width: 1024px) {
+
+	/* ограничиваем viewport шириной, чтобы iOS не масштабировал контент */
+	meta[name="viewport"] {
+		width: device-width;
+	}
+}
+
 body {
 	background-color: #333;
 	scale: none;
